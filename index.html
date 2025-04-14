@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="input-wrapper"><input type="button" id="screen" value="" disabled></div>
+        <div class="buttons-container">
+            <div class="button-row">
+                <input class="button" type="button" value="+" onclick="toScreen('+')" >
+                <input class="button" type="button" value="-" onclick="toScreen('-')" >
+                <input class="button" type="button" value="×" onclick="toScreen('*')" >
+                <input class="button" type="button" value="÷" onclick="toScreen('/')" >
+            </div>
+           <div class="remain-buttons-container">
+            <div class="left-button-container">
+                <div class="button-row">
+                    <input class="button-item" type="button" value="7" onclick="toScreen('7')" />
+                    <input class="button-item" type="button" value="8" onclick="toScreen('8')"/>
+                    <input class="button-item" type="button" value="9" onclick="toScreen('9')"/>
+                  </div>
+                  <div class="button-row">
+                    <input class="button-item" type="button" value="4" onclick="toScreen('4')" />
+                    <input class="button-item" type="button" value="5" onclick="toScreen('5')" />
+                    <input class="button-item" type="button" value="6" onclick="toScreen('6')" />
+                  </div>
+                  <div class="button-row">
+                    <input class="button-item" type="button" value="1" onclick="toScreen('1')"  />
+                    <input class="button-item" type="button" value="2" onclick="toScreen('2')"  />
+                    <input class="button-item" type="button" value="3" onclick="toScreen('3')"  />  
+                  </div>
+                  <div class="button-row last-row">
+                    <input class="button-item" type="button" value="." onclick="toScreen('.')" />
+                    <input class="button-item" type="button" value="0" onclick="toScreen('0')" />
+                    <input class="button-item" type="button" value="C" onclick="toScreen('C')"  />  
+                  </div>
+                  <div class="final-row">
+                  <input class="button-item2" type="button" value="x³" onclick="powerthree()" />
+                  <input class="button-item2" type="button" value="Sin" onclick="Sin()" />
+                  <input class="button-item2" type="button" value="Cos" onclick="Cos()" />
+                </div>
+                <div class="final-row">
+                    <input class="button-item2" type="button" value="atan" onclick="atan()" />
+                    <input class="button-item2" type="button" value="acos" onclick="acos()" />
+                    <input class="button-item2" type="button" value="log" onclick="log()" />
+                  </div>
+                  
+                  
+
+                </div>
+                <input class="equal-button" type="button" value="=" onclick="equal()" />
+              </div>
+            </div>
+          </div>
+        </body>
+      </html>
+              
+
+
+
+      <script src="./index.js"></script> 
+</body>
+
+</html>
