@@ -1,4 +1,4 @@
-4.
+/*4.
 let val1 = null;
     let val2 = undefined;
     let val3 = null;
@@ -28,3 +28,27 @@ let val1 = null;
     //text1 alpha
     //text2 beta
     //text3 alpha
+    */
+
+
+
+
+
+    6.
+    let valueA = 100;
+    let valueB = valueA;
+    let valueC = 100;
+    valueB = 50;
+    console.log(valueA === valueB); //false
+    console.log(valueA === valueC); //true
+    console.log(valueB === valueC); //true
+
+2.
+let result1 = 0 / 0; // This operation results in NaN
+    let result2 = NaN;
+    let result3 = 10 / 0; // This results in Infinity
+    console.log(Object.is(result1, result2)); //true
+    console.log(Object.is(result1, NaN)); //false
+    console.log(result1 === result2); //true
+    console.log(Object.is(result1, result3)); //false
+

@@ -58,6 +58,13 @@ function equal(){
   input.value = EvalLog
  }
 
+ function DeleteOne(){
+  let inputValue = input.value;
+  let DeleteOne= inputValue.slice(0,inputValue.length-1);
+  input.value = DeleteOne
+ }
+
+
 
   
   
