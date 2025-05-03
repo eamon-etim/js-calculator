@@ -42,20 +42,20 @@ function equal(){
  function acos(){
   let inputValue = input.value;
   let Evalacos= Math.acos(inputValue);
-  input.value = Evalacos
+  let stringFromResult = Evalacos + " ";
+  let newresult = stringFromResult.slice(0,8)
+  input.value = newresult;
  }
 
 
  function atan(){
   let inputValue = input.value;
   let Evalatan= Math.atan(inputValue);
-  input.value = Evalatan
- }
-
- function log(){
-  let inputValue = input.value;
-  let EvalLog= Math.log(inputValue);
-  input.value = EvalLog
+  //input.value = Evalatan
+  //we first have to convert the results into a string
+  let stringFromResult = Evalatan + " ";
+  let newresult = stringFromResult.slice(0,8);
+  input.value = newresult;
  }
 
  function DeleteOne(){
